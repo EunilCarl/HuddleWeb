@@ -132,7 +132,7 @@ header{
   display: flex;
   justify-content: center;
  background-color: white;
- padding: 5px 10px;
+ padding: 10px 20px;
  width: 7em;
  font-size: 11px;
  border-radius: 10px;
@@ -231,6 +231,7 @@ justify-content: space-evenly;
       }
       header img{
         width: 80%;
+        
       }
       .secp:nth-child(even){
       display: flex;
@@ -268,28 +269,82 @@ justify-content: space-evenly;
      
     }
     .main-heads{
-       height: 1000px;
+      display: flex;
+      margin: 40px 0;
+      justify-content: center;
     }
     .headsec {
-      flex-direction: initial;
-     text-align: left;
-     border: 1px solid;
+    text-align: initial;
+    width: 40%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0px 10px;
+    padding-top: 30px;
     
-    flex-direction: row;
-   
     }
-    .headsec img{
+    
+    .headbutt{
+      display: initial;
+      padding: 10px 0;
+    }
+    .headbutt a{
+      padding: 20px 50px;
+    }
+    .headsec h2{
+      font-size: 40px;
+      max-width: 500px;
+    }
+ 
+    .headsec p{
+      margin: 0px;
+      max-width: 500px;
      
     }
-    .headimg img{
-      width: 50%;
+    .headimg{
+      justify-content: initial;
+      width: 40%;
+      
     }
+    .headimg img{
+      width: 100%;
+    }
+
     #logo{
-      width: 10%;
+      max-width: 12em;
+      
     }
     #footlogo{
       width: 20%;
     }
-
-  
+    header{
+     
+    }
+    .head{
+      justify-content: space-around;
+      gap: 65%;
+    }
+    .secp {
+      padding: 50px 100px;
+      margin: 0px;
+      justify-content: center;
+    }
+   .insidesec{
+    align-self: center;
+    padding: 0px 100px;
+   }
+    .secp img{
+       width: 30%;
+    }
+    .secp p{
+      max-width: 400px;
+    }
+    
+    @media screen and (min-width: 1366px) {
+      .head{
+        gap: 75%;
+      }
+    }
+      .headsec{
+       
+      }
   }
