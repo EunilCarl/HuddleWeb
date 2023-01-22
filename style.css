@@ -1,0 +1,511 @@
+/* Variables */
+:root{
+    --primary: hsl(322, 100%, 66%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+/* Font */
+h2{
+  font-family: 'Poppins', sans-serif;
+  
+}
+p, a, h4{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  font-weight: 700;
+  font-size: small;
+}
+.copy p{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Reset */
+body,p,a,ul,li{
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Color */
+header{
+  background-color: hsla(192, 100%, 96%, 0.651);
+  
+}
+footer{
+  background-color: hsl(192, 100%, 9%);
+}
+footer p, .about a, .social i{
+  color: white;
+}
+.headbutton{
+  color:black;
+  box-shadow: rgba(138, 145, 151, 0.2) 0px 8px 24px;
+}
+#footlogo{
+  filter: invert(42%) sepia(93%)  brightness(5) contrast(119%);
+}
+.secp p{
+  color: hsl(208, 11%, 55%);
+}
+.headbutt a, .footbutt a{
+color: white;
+}
+
+
+/* base */
+
+footer{
+  padding: 0px  20px;
+  padding-top: 130px;
+}
+
+.details{
+  padding: 20px 0px;
+}
+.details p{
+  padding: 10px 20px;
+  
+  }
+  
+.details li{
+display: flex;
+align-items: baseline;
+}
+
+
+
+
+.headbutt, .footbutt{
+  margin: 35px 0px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+ .headbutt a{
+  background-color: var(--primary);
+  padding: 15px 50px;
+  border-radius: 50px;
+ 
+
+ }
+ .footbutt a{
+  background-color: var(--primary);
+  padding: 15px 50px;
+  border-radius: 50px;
+ }
+
+footer img{
+  width: 15px;
+ 
+}
+header img{
+  width: 100%;
+}
+
+#logo{
+  width: 40%;
+}
+#footlogo{
+  width: 50%;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header{
+
+  padding: 30px;
+
+}
+.headsec{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 10px;
+  
+}
+.head a{
+  display: flex;
+  justify-content: center;
+ background-color: white;
+ padding: 10px 20px;
+ width: 7em;
+ font-size: 11px;
+ border-radius: 10px;
+}
+.secp{
+padding: 50px;
+text-align: center;
+}
+.insidesec{
+  padding: 20px 0px;
+}
+.secp img{
+  width: 90%;
+}
+.near-footer{
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 15px;
+  background-color: white;
+  position: relative;
+  top: 80px;
+  
+}
+
+.about li{
+  padding: 10px 0px;
+}
+.about a{
+  font-size: large;
+  font-weight: 400;
+}
+.about{
+  padding: 20px 0;
+}
+.social{
+ width: 50%;
+ margin: 0 auto;
+ padding: 30px 0;
+
+}
+.social ul{
+display: flex;
+justify-content: center;
+justify-content: space-evenly;
+
+}
+.copy{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.copy p{
+  font-size: small;
+}
+.social i:hover{
+  cursor: pointer;
+  transform: translateY(-0.25em);
+  transform: scale(1.01);
+  transform: scale(10s);
+  color: hsl(300, 69%, 71%);
+  transition: border-color 0.7s, background-color 0.5s, color 0.5s
+}
+
+/* Mobile Breakpoint */
+
+@media screen and (min-width: 370px) {
+  header{
+    background-image: url('bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    
+}
+
+/* Tablet Breakpoint */
+@media screen and (min-width: 768px) {
+      #logo, #footlogo{
+        max-width: 20%;
+      }
+      #footlogo{
+        max-width: 30%;
+      }
+      h1,h2,h3,h4,h5,h6{
+        font-size: 2em;
+        color: hsl(192, 100%, 9%);
+      }
+      .headsec{
+        padding: 20px 30px;
+      }
+      .headsec p{
+        max-width: 80%;
+        font-size: 1.2em;
+        margin: 0 auto;
+      }
+      .headbutt a, .footbutt a{
+        font-size: 1.1em;
+      }
+      .headimg{
+        display: flex;
+        justify-content: center;
+      }
+      header img{
+        width: 80%;
+        
+      }
+      .secp:nth-child(odd){
+      display: flex;
+      flex-direction: row-reverse;
+        
+      }
+      .secp:nth-child(even){
+        display: flex;   
+        }
+      .insidesec{
+        align-self: center;
+      }
+        
+      .secp img{
+        width: 50%;
+      }
+      .secp {
+      text-align: left;
+      }
+      .insidesec{
+        padding: 0px 20px;
+      }
+      .location p{
+        max-width: 60%;
+      }
+      .head a{
+        font-size: 16px;
+        
+      }
+      .near-footer{
+        margin: 0px 12em;
+      }
+      .insfooter{
+        display: flex;
+        
+        
+      }
+      .footimg{
+        padding-top: 50px;
+      }
+      footer{
+        padding: 50px 50px 0px 50px;
+      }
+      .details{
+        width: 50%;
+      }
+      .social ul{
+        width: 100%;
+        justify-content: initial;
+      }
+      .social i{
+        padding: 0px 10px;
+      }
+      .copy{
+       justify-content: initial;
+       padding-top: 8em;
+  
+      }
+      .social{
+        margin-left: 80px;
+        width: 30%;
+        padding: 0px;
+        padding-top: 30px;
+      }
+      .footimg{
+        padding-top: 100px;
+        width: 80%;
+      }
+      #sec1{
+        padding-top: 150px;
+      }
+      .secp img{
+        max-width: 25%;
+      }
+      
+      
+  }
+
+  /* PC Breakpoint */
+  @media screen and (min-width: 1024px) {
+    header{
+      background-image: url('bg-hero-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+    }
+    .main-heads{
+      display: flex;
+      margin: 40px 0;
+      justify-content: center;
+    }
+    .headsec {
+    text-align: initial;
+    width: 40%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0px 10px;
+    padding-top: 30px;
+    
+    }
+    .firstabout{
+      display: flex;
+      width: 20em;
+      justify-content: space-between;
+      
+    }
+    
+    .headbutt{
+      display: initial;
+      padding: 10px 0;
+    }
+    .headbutt a, .footbutt a{
+      padding: 20px 50px;
+    }
+    .headsec h2{
+      font-size: 40px;
+      max-width: 500px;
+    }
+ 
+    .headsec p{
+      margin: 0px;
+      max-width: 500px;
+     
+    }
+    .headimg{
+      justify-content: initial;
+      width: 50%;
+
+    }
+    .headimg img{
+
+      width: 100%;
+
+    }
+    .near-footer{
+      margin: 0px 20em;
+    }
+    .nea
+    .headimg img{
+      width: 100%;
+    }
+
+    #logo{
+      max-width: 12em;
+      
+    }
+    #footlogo{
+      width: 20%;
+    }
+  
+    .head{
+      justify-content: space-around;
+      gap: 65%;
+    }
+    .secp {
+      padding: 50px 100px;
+      margin: 0px;
+      justify-content: space-around;
+    }
+   .insidesec{
+    align-self: center;
+    
+   }
+    .secp img{
+       width: 30%;
+    }
+    .secp p{
+      max-width: 400px;
+    }
+    
+    .social ul{
+      width: 100%;
+      justify-content: initial;
+    }
+    .social i{
+      padding: 0px 10px;
+    }
+    .copy{
+     justify-content: initial;
+     padding-top: 8em;
+
+    }
+    .social{
+      margin-left: 80px;
+      width: 30%;
+      padding: 0px;
+      padding-top: 30px;
+    }
+    .details{
+      width: 40%;
+    }
+    .footimg{
+      padding-top: 100px;
+      width: 90%;
+    }
+  }
+
+
+  @media screen and (min-width: 1366px) {
+
+    .head{
+      gap: 70%;
+    }
+    .headimg{
+      max-width: 40%;
+
+    }
+    .footimg{
+      padding-top: 100px;
+      width: 70%;
+    }
+    .social{
+      width: 20%;
+      margin-left: 15%;
+      
+    }
+    .head a{
+      padding: 15px 40px;
+      font-size: 13px;
+      border-radius: 30px;
+    }
+    .insidesec{
+      padding: 50px 0px;
+    }
+    .secp{
+      justify-content: space-evenly;
+      padding: 60px 100px;
+    }
+    .secp img{
+      width: 30%;
+    }
+    
+  }
+
+
+  /* Default PC Breakpoint*/
+  @media screen and (min-width: 1920px) {
+    .near-footer{
+      margin: 0px 35em;
+    }
+  }
+
+  /* Animation */
+
+  .headbutt a:hover , .footbutt a:hover{
+    cursor: pointer;
+    transform: translateY(-0.25em);
+    transform: scale(1.01);
+    transform: scale(10s);
+    background-color: hsl(300, 69%, 71%);
+    transition: border-color 0.7s, background-color 0.5s, color 0.5s
+  }
+  .firstabout a:hover{
+    text-decoration: underline;
+  }
+  .head a:hover{
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    transform: translateY(-0.3em);
+    transform: scale(1.01);
+    transform: scale(10s);
+    background-color: hsl(0, 37%, 97%);
+    transition: border-color 0.7s, background-color 0.5s, color 0.5s
+  }
